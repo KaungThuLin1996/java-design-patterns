@@ -1,0 +1,1 @@
+package com.learn.patterns.design.structural.bridge.impl1;

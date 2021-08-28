@@ -1,0 +1,1 @@
+package com.learn.patterns.design.behavioral.strategy.impl2;

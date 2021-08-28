@@ -1,0 +1,1 @@
+package com.learn.patterns.design.structural.adapter.impl4;

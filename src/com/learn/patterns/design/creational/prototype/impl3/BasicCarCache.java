@@ -1,0 +1,23 @@
+package com.learn.patterns.design.creational.prototype.impl3;
+
+import java.util.Hashtable;
+
+public class BasicCarCache {
+
+	private static Hashtable<String, BasicCar> basicCarMap = new Hashtable<>();
+	
+	public static BasicCar getCar(String carName) throws CloneNotSupportedException {
+		BasicCar cachedBasicCar = basicCarMap.get(carName);
+		return (BasicCar) cachedBasicCar.clone();
+	}
+	
+	public static void loadCache() {
+		BasicCar nano_base = new Nano("Green Nano");
+		nano_base.price = 100000;
+		basicCarMap.put("Green Nano", nano_base);
+		
+		BasicCar ford_base = new Nano("Ford Yellow");
+		nano_base.price = 500000;
+		basicCarMap.put("Ford Yellow", ford_base);
+	}
+}
